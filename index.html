@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supergoodstore</title>
+    <style>
+        @font-face {
+            font-family: 'SourceSansPro-Semibold';
+            src: url('SourceSansPro-Semibold.eot');
+            src: url('SourceSansPro-Semibold.eot?#iefix') format('embedded-opentype'),
+            url('SourceSansPro-Semibold.svg#SourceSansPro-Semibold') format('svg'),
+            url('SourceSansPro-Semibold.ttf') format('truetype'),
+            url('SourceSansPro-Semibold.woff') format('woff'),
+            url('SourceSansPro-Semibold.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'BluuSuuperstar';
+            src: url('BluuSuuperstar.eot');
+            src: url('BluuSuuperstar.eot?#iefix') format('embedded-opentype'),
+            url('BluuSuuperstar.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Kurye-Bold';
+            src: url('Kurye-Bold.eot');
+            src: url('Kurye-Bold.eot?#iefix') format('embedded-opentype'),
+            url('Kurye-Bold.svg#Kurye-Bold') format('svg'),
+            url('Kurye-Bold.ttf') format('truetype'),
+            url('Kurye-Bold.woff') format('woff'),
+            url('Kurye-Bold.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        html,
+        body {
+            margin:0;
+            padding:0;
+            height:100%;
+            color: #404040;
+        }
+        #container {
+            min-height:100%;
+            position:relative;
+            background: url("bg.jpg") no-repeat center;
+            background-size: cover;
+        }
+        #container::before {
+            background-image: radial-gradient(#918F8B 5%, transparent 5%);
+            background-size: 12px 12px;
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        .p--wrapper {
+            font: 75px/90px "Kurye-Bold";
+            text-transform: lowercase;
+            position: absolute;
+            top: 45%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            width: 100%;
+            text-align: center;
+        }
+        .p--wrapper sup {
+            font-size: 0.2em;
+            margin-bottom: 27px;
+            position: relative;
+            bottom: 20px;
+            right: 14px;
+        }
+        .p--footer {
+            position:absolute;
+            bottom:0;
+            width:100%;
+            height:45px;   /* Height of the footer */
+            background:#FFF3CC;
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+        .p--footer .brand {
+            float: left;
+            height: 45px;
+            font: 22px/45px "SourceSansPro-Semibold";
+        }
+        .p--footer .address {
+            float: right;
+            height: 45px;
+            font: 16px/45px "BluuSuuperstar"
+        }
+        @media only screen and (max-width: 450px) {
+            .p--wrapper {
+                font-size: 45px;
+            }
+            .p--footer .brand {
+                font-size: 16px;
+            }
+            .p--footer .address {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div class="p--wrapper-dot"></div>
+    <div class="p--wrapper">
+        Supergood <sup>tm</sup>
+    </div>
+    <div class="p--footer">
+        <div class="brand">supergood</div>
+        <div class="address">301 S. James St. Ludington, MI</div>
+    </div>
+</div>
+</body>
+</html>
